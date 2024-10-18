@@ -1,0 +1,91 @@
+* {
+  /* 테두리 부분을 없애기 */
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-size: 16px; /*전체 글자 크기*/
+  line-height: 1.5;
+  color: #ffffff; /*글자 색*/
+  background: rgb(0, 0, 0); /*배경색*/
+}
+
+ul {
+  list-style-type: none; /*상단 메뉴 앞 마커 모양 없애기*/
+}
+
+.container {
+  /*여백 설정*/
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.main {
+  color: rgb(255, 255, 255); /*Home, About, Contact 내용 색 바꾸기*/
+  line-height: 2.5;
+}
+
+.navbar {
+  /*상단바 색및 범위(높이)*/
+  background-color: rgb(74, 72, 72);
+  color: #ffffff;
+  height: 60px;
+}
+
+.navbar .container {
+  /*상단바 목록 위치*/
+  display: flex;
+  flex-direction: row; /*열 형식*/
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.navbar ul {
+  /*상단바 Home About Contact 위치*/
+  display: flex;
+  flex-direction: row;
+}
+
+.navbar ul li {
+  /*상단바 Home About Contact 간격*/
+  margin-left: 20px;
+}
+
+.navbar .logo {
+  /*WebDemo 글자*/
+  font-size: x-large;
+  font-weight: bold;
+}
+
+.navbar a {
+  /*상단바 Home About Contact 크기*/
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  /*상단바 Home About Contact 마우스 올렸을 때*/
+  border-bottom: 2px #fff solid; /*마우스 올렸을 때 밑줄*/
+  color: #ddd; /*마우스 올렸을 때 색*/
+}
+
+button {
+  padding: 5px 10px;
+  margin: 5px 100px;
+  font-size: large;
+  font-weight: bold;
+  background-color: lightgrey;
+  /* border-radius: 10px;
+  border-width: 0px; */
+}
+
+button:hover {
+  color: red;
+  background-color: rgb(0, 0, 0);
+}
